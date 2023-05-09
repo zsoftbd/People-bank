@@ -4,12 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        <h2>wellcome to people bank</h2>
-    </div>
     
+    <div id="login-area"">
+        <h2 class="text-center">Wellcome to People Bank</h2>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input type="email" class="form-control" name="Email" id="" placeholder="Email" requiredc >
+            <br>
+            <input type="password" class="form-control" name="password" id="" placeholder="Password" required>
+            <br>
+            <button id="loginBtn" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ <span id="carrentDeposit">00</span> </h2>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$<span id="carrentWithdraw">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Balance status">
+                    <h5>Balance</h5>
+                    <h2>$<span id="carrentBalance">1200</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input id="depositAmount" type="text" class="form-control" placeholder="$ Amout you Deposit" >
+                    <br>
+                    <button id="addDeposit" class="btn btn-success">Enter</button>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawAmount" type="text" class="form-control"placeholder="$ Amout you Withdraw">
+                    <br>
+                    <button id="addWithdraw" class="btn btn-success">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+   <script src="sctipt.js"></script>
 </body>
 </html>
